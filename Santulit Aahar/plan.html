@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>plan</title>
+	<link rel="stylesheet" href="./css/plan.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="col-lg-35 col-md-35 col-sm-35">
+</head>
+<body>
+	<header>
+		<div class="container1">
+			<div id="branding">
+				<p><span>Santulit</span>Aahar</p>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li class="current"><a href="bmi.html">Bmi</a></li>
+					<li class="current"><a href="question.html">Plan</a></li>
+					<li class="current"><a href="about.html">About</a></li>
+					<li class="log" role="button" data-toggle="modal" data-target="#login-modal"><span>Login</span></li></ul>
+				</nav>
+				<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header" align="center">
+									<p><span>Santulit</span>Aahar</p>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								</div>
+										 <div id="div-forms">
+
+														<!-- Begin # Login Form -->
+														<form id="login-form">
+														<div class="modal-body">
+												<div id="div-login-msg">
+																				<div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+																				<span id="text-login-msg">Type your username and password.</span>
+																		</div>
+												<input id="login_username" class="form-control" type="text" placeholder="Username" required>
+												<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+												<div class="checkbox">
+															<label>
+																	<input type="checkbox" onclick="myFunction()"> Show Password
+															</label>
+													</div>
+												<!--<input type="checkbox"  onclick="myFunction()"><font color="black">Show Password</color>-->
+
+													</div>
+												<div class="modal-footer">
+																		<div>
+																				<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+																		</div>
+													<div>
+																				<button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+																		</div>
+												</div>
+														</form>
+														<!-- Begin | Register Form -->
+														<form id="register-form" style="display:none;">
+														<div class="modal-body">
+												<div id="div-register-msg">
+																				<div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+																				<span id="text-register-msg">Register an account.</span>
+																		</div>
+												<input id="register_username" class="form-control" type="text" placeholder="Username " required>
+																		<input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+																		<input id="register_password" class="form-control" type="password" placeholder="Password" required>
+													</div>
+												<div class="modal-footer">
+																		<div>
+																				<button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+																		</div>
+																		<div>
+																				<button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+
+																		</div>
+												</div>
+														</form>
+												</div>
+							</div>
+						</div>
+					</div>
+</div>
+			</header>
+			<div class="social">
+				<a href="#" class="fa fa-facebook"></a><br>
+			<a href="#" class="fa fa-twitter"></a><br>
+			<a href="#" class="fa fa-google"></a><br>
+			<a href="#" class="fa fa-instagram"></a><br>
+			<a href="#" class="fa fa-yahoo"></a><br>
+			</div>
+      <div class="container">
+      	<h3 style=" font: bold 45px/1.3 'Lobster Two', Helvetica, sans-serif; text-transform:lowercase">We recommaned you to follow this plan<h3>
+				<span style="font-weight:bold; color:black;">Here is your nutrition!</span><hr>
+        <img src="./img/breakfast.jpg" alt="breakfast" width="200" height="100" style="margin-left:500px" >
+        <div class="food" style="top-margin:-10px">
+          <div class="gallery">
+          <a target="_blank" href="./img/eggs.jpg">
+            <img  id="aa"  src="./img/eggs.jpg" alt="eggs" width="200" height="100">
+          </a>
+          <div class="desc"><input id="an" type="button" class="button" id="theButton" value="Eggs" onclick="chngaa()"></div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="./img/milkkkk.jpg">
+            <img  id="bb" src="./img/milkkkk.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc"><input id="bn" type="button" class="button" id="theButton" value="Milk" onclick="chngbb()"></div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="./img/bread.jpg">
+            <img id="cc" src="./img/bread.jpg" alt="bread" width="600" height="400">
+          </a>
+          <div class="desc"><input id="cn" type="button" class="button" id="theButton" value="Bread" onclick="chngcc()"></div>
+        </div>
+        </div>
+          <img src="./img/lunc.png" alt="lunch" width="200" height="100" style="margin-left:500px">
+        <div class="food">
+          <div class="gallery">
+                <a target="_blank" href="./img/daalll.jpg">
+                  <img id="d" src="./img/daalll.jpg" alt="daal" width="600" height="400">
+                </a>
+                <div class="desc"><input   id="dn" type="button" class="button" id="theButton" value="Daal" onclick="chngd()"></div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="./img/bhat.jpg">
+                  <img id="ee" src="./img/bhat.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc"><input  id="en" type="button" class="button" id="theButton" value="Bhat" onclick="chngee()"></div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="./img/tarkari.jpg">
+                  <img id="ff" src="./img/tarkari.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc"><input  id="fn" type="button" class="button" id="theButton" value="Curry" onclick="chngff()"></div>
+              </div></div>
+  <img src="./img/snacks.png" alt="eggs" width="200" height="150" style="margin-left:500px">
+        <div class="food">        <div class="gallery">
+                <a target="_blank" href="./img/dahi.jpg">
+                  <img id="gg" src="./img/dahi.jpg" alt="Dahi" width="600" height="400">
+                </a>
+                <div class="desc"><input  id="gn" type="button" class="button" id="theButton" value="Curd" onclick="chnggg()"></div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="./img/chiura.jpg">
+                  <img id="hh" src="./img/chiura.jpg" alt="./img/Chiura" width="600" height="400">
+                </a>
+                <div class="desc"><input  id="hn" type="button" class="button" id="theButton" value="Chiura" onclick="chnghh()"></div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="./img/banana.jpg">
+                  <img id="ii" src="./img/banana.jpg" alt="Banana" width="600" height="400">
+                </a>
+                <div class="desc"><input  id="iin" type="button" class="button" id="theButton" value="Banana" onclick="chngii()"></div>
+              </div></div>
+              <img src="./img/dinner.jpg" alt="eggs" width="200" height="110" style="margin-left:500px">
+        <div class="food">        <div class="gallery">
+                <a target="_blank" href="./img/roti.jpg">
+                  <img id="jj" src="./img/roti.jpg" alt="Roti" width="600" height="400">
+                </a>
+                <div class="desc"><input  id="jn" type="button" class="button" id="theButton" value="Roti" onclick="chngjj()"></div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="./img/tarkari.jpg">
+                  <img id="kk" src="./img/tarkari.jpg" alt="tarkari" width="600" height="400">
+                </a>
+                <div class="desc"><input  id="kn" type="button" class="button" id="theButton" value="Tarkari" onclick="chngkk()"></div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="./img/kadi.jpg">
+                  <img id="ll" src="./img/kadi.jpg" alt="kadi" width="600" height="400">
+                </a>
+                <div class="desc"><input  id="ln" type="button" class="button" id="theButton" value="Kadi" onclick="chngll()"></div>
+              </div></div>
+
+
+
+      </div>
+<div style="margin-top:00px;"></div>
+<div class="row">
+	<div style="margin-top:50px;"></div>
+	<button class="btn view"><a href="plan2.html">Alternate Plan</a></button>
+</div>
+<footer>
+	<p style="padding-left:126px">Santulit Aahar, Copyright &copy; 2019</p>
+</footer>
+<script>
+var dd = 4;
+var cnt = 0;
+  		function chngaa() {
+						var rotator = document.getElementById('aa');
+						var element = document.getElementById('an');   // change to match image ID
+	            var imageDir = './img/';                          // change to match images folder
+
+
+	            var images = ['cereal.jpg','apple.jpg' , 'dry.jpg','eggs.jpg'];
+							var name = ['Cereal','Apple','Dry Fruits','Eggs'];
+	            cnt++;
+							var len = images.length;
+							var len = name.length;
+	            if (cnt < dd) {
+	                aa.src = imageDir + images[cnt];
+									an.value = name[cnt];
+	            }
+	            else if (cnt == len) {
+	                aa.src = imageDir + images[0];
+									an.value = name[0];
+	                cnt = 0;
+            }
+        }
+				function chngbb() {
+							var rotator = document.getElementById('bb');
+								var element = document.getElementById('bn');   // change to match image ID
+								var imageDir = './img/';                          // change to match images folder
+
+
+								var images = ['co.jpg', 'blacktea.jpg', 'greentea.jpg', 'milkkkk.jpg'];
+								var name = ['Coffee','BlackTea','GreenTea','Milk'];
+								cnt++;
+
+								var len = images.length;
+								var len = name.length;
+								if (cnt < dd) {
+										bb.src = imageDir + images[cnt];
+										bn.value = name[cnt];
+								}
+								else if (cnt == len) {
+										bb.src = imageDir + images[0];
+										bn.value = name[0];
+										cnt = 0;
+							}
+					}
+					function chngcc() {
+								var rotator = document.getElementById('cc');
+								var element = document.getElementById('cn');  // change to match image ID
+									var imageDir = './img/';                          // change to match images folder
+
+
+									var images = ['waffle.jpg', 'pancake.jpg', 'chanaa.jpg', 'bread.jpg'];
+									var name = ['Waffle','PanCake','Chana','Bread'];
+
+									cnt++;
+
+									var len = images.length;
+									if (cnt < dd) {
+											cc.src = imageDir + images[cnt];
+											cn.value = name[cnt];
+									}
+									else if (cnt == len) {
+											cc.src = imageDir + images[0];
+											cn.value = name[0];
+											cnt = 0;
+								}
+						}
+						function chngd() {
+									var rotator = document.getElementById('d');
+									var element = document.getElementById('dn');  // change to match image ID
+										var imageDir = './img/';                          // change to match images folder
+
+
+										var images = ['kadi.jpg', 'sag.jpg','achar.jpg','daalll.jpg'];
+										var name = ['Kadi','Spinach','Pickle','Daal'];
+										cnt++;
+
+										var len = images.length;
+										if (cnt < dd) {
+												d.src = imageDir + images[cnt];
+												dn.value = name[cnt];
+										}
+										else if (cnt == len) {
+												d.src = imageDir + images[0];
+												dn.value = name[0];
+												cnt = 0;
+									}
+							}
+							function chngee() {
+										var rotator = document.getElementById('ee');
+										var element = document.getElementById('en');  // change to match image ID
+											var imageDir = './img/';                          // change to match images folder
+
+
+											var images = ['dhido.jpg', 'roti.jpg', 'makai.jpg', 'bhat.jpg'];
+											var name = ['Dhido','Roti','MakaiRoti','Rice'];
+											cnt++;
+
+											var len = images.length;
+											if (cnt < dd) {
+													ee.src = imageDir + images[cnt];
+													en.value = name[cnt];
+											}
+											else if (cnt == len) {
+													ee.src = imageDir + images[0];
+													en.value = name[0];
+													cnt = 0;
+										}
+								}
+								function chngff() {
+											var rotator = document.getElementById('ff');  // change to match image ID
+												var imageDir = './img/';                          // change to match images folder
+
+
+												var images = ['lasi.jpg', 'carrot.jpg', 'ber.jpg','tarkari.jpg'];
+												var name = ['Lassi','Carrot','Cucumber','Curry'];
+												cnt++;
+
+												var len = images.length;
+												if (cnt < dd) {
+														ff.src = imageDir + images[cnt];
+														fn.value = name[cnt];
+												}
+												else if (cnt == len) {
+														ff.src = imageDir + images[0];
+														fn.value = name[0];
+														cnt = 0;
+											}
+									}
+									function chnggg() {
+												var rotator = document.getElementById('gg');  // change to match image ID
+													var imageDir = './img/';                          // change to match images folder
+
+
+													var images = ['f.jpg', 'gajar.jpg', 'haluwa.jpg','dahi.jpg'];
+													var name = ['FruSalad','GajarHaluwa','Haluwa','Curd'];
+
+													cnt++;
+
+													var len = images.length;
+													if (cnt < dd) {
+															gg.src = imageDir + images[cnt];
+															gn.value = name[cnt];
+													}
+													else if (cnt == len) {
+															gg.src = imageDir + images[0];
+															gn.value = name[0];
+															cnt = 0;
+												}
+										}
+										function chnghh() {
+													var rotator = document.getElementById('hh');  // change to match image ID
+														var imageDir = './img/';                          // change to match images folder
+														var images = ['potato.jpg','ss.jpg', 'pizzza.jpg', 'chiura.jpg'];
+														var name = ['Potato','Salad','Pizza','Chiura'];
+
+														cnt++;
+
+														var len = images.length;
+														if (cnt < dd) {
+																hh.src = imageDir + images[cnt];
+																hn.value = name[cnt];
+														}
+														else if (cnt == len) {
+																hh.src = imageDir + images[0];
+																hn.value = name[0];
+																cnt = 0;
+													}
+											}
+											function chngii() {
+														var rotator = document.getElementById('ii');  // change to match image ID
+															var imageDir = './img/';                          // change to match images folder
+
+
+															var images = ['juice.jpg', 'water.jpg', 'lasi.jpg','banana.jpg'];
+															var name = ['Juice','Watermelon','Lassi','Banana'];
+															cnt++;
+
+															var len = images.length;
+															if (cnt < dd) {
+																	ii.src = imageDir + images[cnt];
+																	iin.value = name[cnt];
+															}
+															else if (cnt == len) {
+																	ii.src = imageDir + images[0];
+																	iin.value = name[0];
+																	cnt = 0;
+														}
+												}
+												function chngjj() {
+															var rotator = document.getElementById('jj');  // change to match image ID
+																var imageDir = './img/';                          // change to match images folder
+
+
+																var images = ['ss.jpg', 'haluwa.jpg', 'bhat.jpg','roti.jpg'];
+																var name = ['salad','Haluwa','Bhat','Roti'];
+																cnt++;
+
+																var len = images.length;
+																if (cnt < dd) {
+																		jj.src = imageDir + images[cnt];
+																		jn.value = name[cnt];
+																}
+																else if (cnt == len) {
+																		jj.src = imageDir + images[0];
+																		jn.value = name[0];
+																		cnt = 0;
+															}
+													}
+													function chngkk() {
+																var rotator = document.getElementById('kk');  // change to match image ID
+																	var imageDir = './img/';                          // change to match images folder
+
+
+																	var images = ['achar.jpg', 'papad.jpg', 'chanaa.jpg', 'tarkari.jpg'];
+																	var name = ['Pickle','Papad','Chana','Tarkari'];
+																	cnt++;
+
+																	var len = images.length;
+																	if (cnt < dd) {
+																			kk.src = imageDir + images[cnt];
+																			kn.value = name[cnt];
+																	}
+																	else if (cnt == len) {
+																			kk.src = imageDir + images[0];
+																			kn.value = name[0];
+																			cnt = 0;
+																}
+														}
+														function chngll() {
+																	var rotator = document.getElementById('ll');  // change to match image ID
+																		var imageDir = './img/';                          // change to match images folder
+																		var name = ['Spinach','milk','Dhido','Kadi'];
+																		var images = ['sag.jpg', 'milk.jpg', 'dhido.jpg', 'kadi.jpg'];
+
+																		cnt++;
+
+																		var len = images.length;
+																		if (cnt < dd) {
+																				ll.src = imageDir + images[cnt];
+																				ln.value = name[cnt];
+																		}
+																		else if (cnt == len) {
+																				ll.src = imageDir + images[0];
+																				ln.value = name[0];
+																				cnt = 0;
+																	}
+															}
+function myFunction() {
+var x = document.getElementById("login_password");
+if (x.type === "password") {
+x.type = "text";
+} else {
+x.type = "password";
+}
+}
+
+$(function() {
+
+		var $formLogin = $('#login-form');
+		/*var $formLost = $('#lost-form');*/
+		var $formRegister = $('#register-form');
+		var $divForms = $('#div-forms');
+		var $modalAnimateTime = 300;
+		var $msgAnimateTime = 150;
+		var $msgShowTime = 2000;
+
+		$("form").submit(function () {
+				switch(this.id) {
+						case "login-form":
+								var $lg_username=$('#login_username').val();
+								var $lg_password=$('#login_password').val();
+								if ($lg_username == "ERROR") {
+										msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
+								} else {
+										msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
+								}
+								return false;
+								break;
+						case "register-form":
+								var $rg_username=$('#register_username').val();
+								var $rg_email=$('#register_email').val();
+								var $rg_password=$('#register_password').val();
+								if ($rg_username == "ERROR") {
+										msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
+								} else {
+										msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
+								}
+								return false;
+								break;
+						default:
+								return false;
+				}
+				return false;
+		});
+
+		$('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
+		$('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
+		$('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
+		$('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
+
+
+		function modalAnimate ($oldForm, $newForm) {
+				var $oldH = $oldForm.height();
+				var $newH = $newForm.height();
+				$divForms.css("height",$oldH);
+				$oldForm.fadeToggle($modalAnimateTime, function(){
+						$divForms.animate({height: $newH}, $modalAnimateTime, function(){
+								$newForm.fadeToggle($modalAnimateTime);
+						});
+				});
+		}
+
+		function msgFade ($msgId, $msgText) {
+				$msgId.fadeOut($msgAnimateTime, function() {
+						$(this).text($msgText).fadeIn($msgAnimateTime);
+				});
+		}
+
+		function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+				var $msgOld = $divTag.text();
+				msgFade($textTag, $msgText);
+				$divTag.addClass($divClass);
+				$iconTag.removeClass("glyphicon-chevron-right");
+				$iconTag.addClass($iconClass + " " + $divClass);
+				setTimeout(function() {
+						msgFade($textTag, $msgOld);
+						$divTag.removeClass($divClass);
+						$iconTag.addClass("glyphicon-chevron-right");
+						$iconTag.removeClass($iconClass + " " + $divClass);
+			}, $msgShowTime);
+		}
+});
+
+$(document).ready(function(){
+$("#myBtn").click(function(){
+	$("#myModal").modal();
+});
+});
+</script>
+</body>
+</html>

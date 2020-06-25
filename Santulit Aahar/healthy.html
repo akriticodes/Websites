@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>healthy</title>
+	<link rel="stylesheet" href="./css/plan.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="col-lg-35 col-md-35 col-sm-35">
+</head>
+<body>
+	<header>
+		<div class="container1">
+			<div id="branding">
+				<p><span>Santulit</span>Aahar</p>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li class="current"><a href="bmi.html">Bmi</a></li>
+					<li class="current"><a href="question.html">Plan</a></li>
+					<li class="current"><a href="about.html">About</a></li>
+					<li class="log" role="button" data-toggle="modal" data-target="#login-modal"><span>Login</span></li></ul>
+				</nav>
+				<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header" align="center">
+									<p><span>Santulit</span>Aahar</p>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								</div>
+										 <div id="div-forms">
+
+														<!-- Begin # Login Form -->
+														<form id="login-form">
+														<div class="modal-body">
+												<div id="div-login-msg">
+																				<div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+																				<span id="text-login-msg">Type your username and password.</span>
+																		</div>
+												<input id="login_username" class="form-control" type="text" placeholder="Username" required>
+												<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+												<div class="checkbox">
+															<label>
+																	<input type="checkbox" onclick="myFunction()"> Show Password
+															</label>
+													</div>
+												<!--<input type="checkbox"  onclick="myFunction()"><font color="black">Show Password</color>-->
+
+													</div>
+												<div class="modal-footer">
+																		<div>
+																				<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+																		</div>
+													<div>
+																				<button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+																		</div>
+												</div>
+														</form>
+														<!-- Begin | Register Form -->
+														<form id="register-form" style="display:none;">
+														<div class="modal-body">
+												<div id="div-register-msg">
+																				<div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+																				<span id="text-register-msg">Register an account.</span>
+																		</div>
+												<input id="register_username" class="form-control" type="text" placeholder="Username " required>
+																		<input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+																		<input id="register_password" class="form-control" type="password" placeholder="Password" required>
+													</div>
+												<div class="modal-footer">
+																		<div>
+																				<button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+																		</div>
+																		<div>
+																				<button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+
+																		</div>
+												</div>
+														</form>
+												</div>
+							</div>
+						</div>
+					</div>
+</div>
+			</header>
+			<div class="social">
+				<a href="#" class="fa fa-facebook"></a><br>
+			<a href="#" class="fa fa-twitter"></a><br>
+			<a href="#" class="fa fa-google"></a><br>
+			<a href="#" class="fa fa-instagram"></a><br>
+			<a href="#" class="fa fa-yahoo"></a><br>
+			</div>
+      <div class="container">
+      	<h3 style=" font: bold 45px/1.3 'Lobster Two', Helvetica, sans-serif; text-transform:lowercase"> Congrats, You are Healthy!<h3><span style="font-weight:bold; color:black;">Follow any of these exercise to remain fit!</span><hr>
+        <img src="./img/outttt.png" alt="eggs" width="400" height="80" style="margin-left:400px" >
+        <div class="food" style="top-margin:-10px">
+          <div class="gallery">
+          <a target="_blank" href="./img/run.jpg">
+            <img  id="theImage" src="./img/run.jpg" alt="eggs" width="200" height="100">
+          </a>
+          <div class="desc">Running</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="./img/skipping.jpg">
+            <img src="./img/skipping.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Skipping</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="./img/walk.jpg">
+            <img src="./img/walk.jpg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Walking</div>
+        </div>
+        </div>
+		</br>
+<p>
+
+          </p>
+		  <img src="./img/inn.png" alt="eggs" width="400" height="100" style="margin-left:400px">
+        <div class="food">
+          <div class="gallery">
+                <a target="_blank" href="./img/squats.jpg">
+                  <img src="./img/squats.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Squats</div>
+              </div>
+			   <div class="gallery">
+                <a target="_blank" href="./img/push.jpg">
+                  <img src="./img/push.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">PushUps</div>
+              </div>
+
+
+
+             <div class="gallery">
+                <a target="_blank" href="./img/lunges.jpg">
+                  <img src="./img/lunges.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Lunges</div>
+              </div></div>
+
+			  </br>
+<p>
+<h3 style=" font: 30px/1.3 'Lobster Two', Helvetica, sans-serif; text-transform:lowercase; text-align:center; ">follow each of any of the above indoor and outdoor activities for 30 minutes everyday to remain fit!<h3><span style="font-weight:bold; color:black;">
+</p>
+
+
+
+
+      </div>
+<div style="margin-top:00px;"></div>
+<footer>
+	<p>Santulit Aahar, Copyright &copy; 2019</p>
+</footer>
+<script>
+theButton.onclick = function pictureChange()
+{
+   document.getElementById("theImage").src="./img/milkkkk.jpg";
+}
+
+function myFunction() {
+var x = document.getElementById("login_password");
+if (x.type === "password") {
+x.type = "text";
+} else {
+x.type = "password";
+}
+}
+
+$(function() {
+
+		var $formLogin = $('#login-form');
+		/*var $formLost = $('#lost-form');*/
+		var $formRegister = $('#register-form');
+		var $divForms = $('#div-forms');
+		var $modalAnimateTime = 300;
+		var $msgAnimateTime = 150;
+		var $msgShowTime = 2000;
+
+		$("form").submit(function () {
+				switch(this.id) {
+						case "login-form":
+								var $lg_username=$('#login_username').val();
+								var $lg_password=$('#login_password').val();
+								if ($lg_username == "ERROR") {
+										msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
+								} else {
+										msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
+								}
+								return false;
+								break;
+						case "register-form":
+								var $rg_username=$('#register_username').val();
+								var $rg_email=$('#register_email').val();
+								var $rg_password=$('#register_password').val();
+								if ($rg_username == "ERROR") {
+										msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
+								} else {
+										msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
+								}
+								return false;
+								break;
+						default:
+								return false;
+				}
+				return false;
+		});
+
+		$('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
+		$('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
+		$('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
+		$('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
+
+
+		function modalAnimate ($oldForm, $newForm) {
+				var $oldH = $oldForm.height();
+				var $newH = $newForm.height();
+				$divForms.css("height",$oldH);
+				$oldForm.fadeToggle($modalAnimateTime, function(){
+						$divForms.animate({height: $newH}, $modalAnimateTime, function(){
+								$newForm.fadeToggle($modalAnimateTime);
+						});
+				});
+		}
+
+		function msgFade ($msgId, $msgText) {
+				$msgId.fadeOut($msgAnimateTime, function() {
+						$(this).text($msgText).fadeIn($msgAnimateTime);
+				});
+		}
+
+		function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+				var $msgOld = $divTag.text();
+				msgFade($textTag, $msgText);
+				$divTag.addClass($divClass);
+				$iconTag.removeClass("glyphicon-chevron-right");
+				$iconTag.addClass($iconClass + " " + $divClass);
+				setTimeout(function() {
+						msgFade($textTag, $msgOld);
+						$divTag.removeClass($divClass);
+						$iconTag.addClass("glyphicon-chevron-right");
+						$iconTag.removeClass($iconClass + " " + $divClass);
+			}, $msgShowTime);
+		}
+});
+
+$(document).ready(function(){
+$("#myBtn").click(function(){
+	$("#myModal").modal();
+
+});
+});
+
+<li class="log" role="button" data-toggle="modal" data-target="#login-modal"><span>Login</span></li></ul>
+
+
+</script>
+</body>
+</html>
