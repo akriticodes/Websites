@@ -1,0 +1,178 @@
+body{
+  font: 15px/1.5 century gothic;
+  padding:0px;
+  margin:0px 50px 0px 50px;
+  height:100%;
+}
+
+.container{
+  width:75%;*/
+  margin:auto;
+  overflow:hidden;
+}
+.bg{
+      background: url("../img/boat.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+.log{
+  border:1px solid blue;
+  padding:10px 10px;
+  align-items: center;
+  position:fixed;
+}
+header ul{
+  margin:0;
+  padding: 0;
+}
+
+
+header{
+  width:100%;
+  background-blend-mode:
+  color:#ffffffff;
+  padding-top:30px;
+  min-height:30px;
+  font-family:century gothic;
+  position:fixed;
+}
+
+header a{
+  color:blue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size:16px;
+  font-weight:bold;
+  padding:0px 10px;
+}
+
+header a{
+  font-weight:lighter;
+
+}
+
+a:hover{
+  /*color:#000080;*/
+  transition:0.25s;
+  border:1px solid blue;
+  padding:10px ;
+}
+
+.log:hover{
+    transition:0.25s;
+    background-color: blue;
+    color:white;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding:0 20px 0 20px;
+}
+
+
+header #branding{
+  float:left;
+  color:blue;
+}
+
+
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+/*img{
+  height:25px;
+  width:25px;
+}
+li{
+  text-decoration: none;
+  display:inline;
+}
+.passenger{
+  padding-top:100px;
+}
+
+.passenger h1{
+  width:60%;
+text-align:center;
+}
+.orm{
+  float:left;
+}
+
+.head{
+  float:left;
+  text-align:left;
+  width:45%;
+  padding:0px;
+
+}
+
+.info{
+  width:60%;
+  margin:auto;
+  overflow:hidden;
+  border: 1px;
+  padding:0px;
+}
+
+.col-75{
+  padding:0px;
+}
+.col-75 input{
+  padding:8px;
+  width:88%;
+  float:left;
+  margin:8px 8px 8px 0px;
+}
+.passenger b{
+  padding-left:120px;
+}
+.ead1234{
+  border:1px solid grey;
+  border-radius:5px;
+
+}
+span{
+  color:red;
+}
+h3{
+  color:grey;
+}
+h2{
+  font-weight:bolder;
+}
+.button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float:left;
+}
+.button:hover{
+  background-color:red;
+}
+/*footer*/
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:blue;
+  text-align: center;
+
+}
